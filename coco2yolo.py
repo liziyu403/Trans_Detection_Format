@@ -4,6 +4,7 @@ import random
 from pathlib import Path
 from shutil import copyfile
 
+# with datatset spliter
 def convert_coco_to_yolo(coco_annotation_file, output_dir, img_dir, val_split=0.1):
     with open(coco_annotation_file, 'r') as f:
         coco_data = json.load(f)
